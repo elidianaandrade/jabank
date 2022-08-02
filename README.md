@@ -19,10 +19,10 @@ própria instituição).”
 
 ## ⚙ Funcionalidades
 
-- [ ] Saque;
-- [ ] Depósito;
-- [ ] Transferência;
-- [ ] Exibição de saldo.
+- [x] Saque;
+- [x] Depósito;
+- [x] Transferência;
+- [x] Exibição de saldo.
 
 ## 🔍 Referências
 
