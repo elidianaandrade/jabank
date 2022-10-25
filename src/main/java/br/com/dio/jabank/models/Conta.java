@@ -61,6 +61,10 @@ public abstract class Conta implements IConta {
             return numero;
     }
 
+    public Cliente getCliente() {
+        return cliente;
+    }
+
     public double getSaldo() {
             return saldo;
     }
