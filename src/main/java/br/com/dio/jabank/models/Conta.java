@@ -4,7 +4,7 @@ import br.com.dio.jabank.interfaces.IConta;
 
 public abstract class Conta implements IConta {
 
-    private static final int AGENCIA_DEFAULT = 1;
+    private static final int AGENCIA_PADRAO = 1;
     private static int COUNTER = 1;
 
     protected int agencia;
@@ -13,7 +13,7 @@ public abstract class Conta implements IConta {
     protected Cliente cliente;
 
     public Conta(Cliente cliente) {
-        this.agencia = Conta.AGENCIA_DEFAULT;
+        this.agencia = Conta.AGENCIA_PADRAO;
         this.numero = COUNTER++;
         this.cliente = cliente;
     }
@@ -66,7 +66,7 @@ public abstract class Conta implements IConta {
     }
 
     protected void imprimirDados() {
-        System.out.println(String.format("\nJABANK -------------------------------------"));
+        System.out.println(String.format("\n--------------------------------------------"));
         System.out.println(String.format("\nAGÊNCIA: %d", this.agencia));
         System.out.println(String.format("CONTA: %d", this.numero));
         System.out.println(String.format("CLIENTE: %s", this.cliente.getNome() + " " + this.cliente.getSobrenome()));
